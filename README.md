@@ -1,5 +1,5 @@
 
-nofee-ng: The Next Generation NoDevFee Mining Software for Cryptocurrency
+nofee-ng: Next Generation NoDevFee Mining Software for Cryptocurrency
 ===
 
 ### The first edition you can find on this planet that has the feature of anti-DevFee in a central mode for both GPU miners and hardware miners (FPGA, ASIC, etc). ###
