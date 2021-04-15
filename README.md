@@ -6,7 +6,7 @@ nofee-ng: Next Generation NoDevFee Mining Software for Cryptocurrency
 
 `nofee-ng` is a generic solution for NoDevFee mining. It can get stolen cryptocurrency refunded back from mining software (which is known as DevFee and is about 0.5~2% of your total mining shares) for many kinds, such as ETH, ETC, XMR, ZCash, etc, by refunding DevFee to **ANOTHER wallet address** which can be different from the main mining address.
 
-This is the **Next Generation** of NoDevFee program. It works as a *"soft router"* rather than the first generation which works on a single same machine together with the mining software. So, `nofee-ng` works for Windows， Linux and hardware miner although itself must be run in Linux.
+This is the **Next Generation** of NoDevFee program. It works as a *"soft router"* rather than the first generation which works on a single same machine together with the mining software. So, `nofee-ng` works for Windows， Linux and hardware miner although itself must be run in Linux. It can run on a dedicated server or even Raspberry Pi.
 
 `nofee-ng` is perfect for mining farms for easy management. If you're a mining farm operator, you can also redirect the DevFee to your own wallet without the knowledge of your tenants! Remember: you are **NOT** stealing from your clients because DevFee belonged to the mining software author.
 
@@ -14,7 +14,7 @@ This is the **Next Generation** of NoDevFee program. It works as a *"soft router
 
 The refunded pool may be a different mining pool than your main pool since mining software may use another pool for DevFee. Please check the README.md in different implementation folders.
 
-The mechanism of `nofee-ng` is depicted in the following paradigm: The original network traffic, e.g. mining work submission, goes from miners directly to the pool. But now the traffic is redirected to the `nofee-ng` *soft router* who will change the DevFee wallet to your own wallet address.
+The mechanism of `nofee-ng` is depicted in the following paradigm: The original network traffic, e.g. mining work submission, goes from miners directly to the pool. But now the traffic is redirected to the `nofee-ng` *soft router* who will change the DevFee wallet to your own wallet address. In order to make `nofee-ng` to work, it **MUST** be deployed in the **same internal network** with your miners.
 
 ## Usage ##
 
@@ -74,7 +74,7 @@ nofee-ng：下一代反抽水挖矿软件
 
 `nofee-ng`是一个通用的反抽水挖矿的解决方案。挖矿软件在工作的时候通常会偷算力（DevFee，大概占总算力的0.5~2%），`nofee-ng`可以把这部分被偷取的算力返还给你，它支持多种加密货币，如ETH、ETC、XMR、ZCash等。被偷取的算力可以被返还到主挖矿钱包，也可以返还到**另外一个钱包**。
 
-本项目是**下一代**反抽水软件。它与上一代反抽水软件（必须与挖矿软件运行在同一台矿机上）不同的是，它是以*“软路由”*的形式进行工作的。因此，尽管`nofee-ng`本身必须运行在Linux环境下，但它可同时适用于Windows、Linux以及专用矿机。
+本项目是**下一代**反抽水软件。它与上一代反抽水软件（必须与挖矿软件运行在同一台矿机上）不同的是，它是以*“软路由”*的形式进行工作的。因此，尽管`nofee-ng`本身必须运行在Linux环境下，但它可同时适用于Windows、Linux以及专用矿机。除了专门的服务器，它甚至还能运行在树莓派（Raspberry Pi）上。
 
 因其易于管理，对于矿场来说，`nofee-ng`是理想的选择。如果你是矿场的运营者，你甚至可以在你的客户不知情的情况下把被偷的算力返还到你自己的钱包中。记住：你并**没有**偷取你客户的算力（DevFee），因为它们本来就是会被挖矿软件偷取的。
 
@@ -82,7 +82,7 @@ nofee-ng：下一代反抽水挖矿软件
 
 部分挖矿软件会使用不同于你挖矿的主矿池进行偷算力，因此返还的矿池可能会不同于主矿池，详情请查看各个不同加密货币文件夹下的说明。
 
-`nofee-ng`的原理如图所示：原来的网络流量（如挖矿结果提交）直接由矿机提交到矿池。但现在的网络流量被重定向到`nofee-ng`所在的*软路由*服务器上，它将把DevFee的钱包改为你自己的钱包。
+`nofee-ng`的原理如图所示：原来的网络流量（如挖矿结果提交）直接由矿机提交到矿池。但现在的网络流量被重定向到`nofee-ng`所在的*软路由*服务器上，它将把DevFee的钱包改为你自己的钱包。为使`nofee-ng`能正常运行，它**必须**和你的矿机一起部署在**相同的内网**中。
 
 ## 用法 ##
 
