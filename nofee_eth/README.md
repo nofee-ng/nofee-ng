@@ -11,6 +11,7 @@ nofee-ng for ETH: Next Generation NoDevFee Mining Software for Ethereum
  + For PhoenixMiner, the worker's name is *eth1.0*. The refunded pool could be your main mining pool, [Nanopool](https://eth.nanopool.org) or [Ethermine](https://ethermine.org/), check **ALL** of them for your refunded DevFee.
  + For Gminer, the worker's name is *eth1.0*. The refunded pool is [SparkPool](https://www.sparkpool.com/) .
  + For Claymore Miner, the worker's name is *eth1.0*. The refunded pool is your main mining pool.
+ + NBMiner is not supported since it uses an encrypted protocol to mine DevFee. Use other mining software.
 3. The refunded DevFee will show up in a mining pool in about **1~2 hours**. Please be patient!
 4. **SOMETIMES** despite you use plain mining protocols on your main wallet, the mining software will still use SSL protocols for DevFee which makes `nofee-ng` unable to detect DevFee. This is found when using PhoenixMiner.
 5. Typical URLs to check refunded DevFee (replace 0xAAAA with your wallet address):
@@ -36,6 +37,7 @@ nofee-ng for ETH: 下一代反抽水挖矿软件(ETH版本)
  + 对于PhoenixMiner：矿工名是*eth1.0*。返还的矿池可能是你用于挖矿的主矿池，也可能是[Nanopool](https://eth.nanopool.org)，或[Ethermine](https://ethermine.org/)，请检查**所有**这几个矿池，看看有没有你的返还算力(DevFee)。
  + 对于Gminer：矿工名是*eth1.0*。返还的矿池就是[SparkPool](https://www.sparkpool.com/)。
  + 对于Claymore Miner：矿工名是*eth1.0*。返还的矿池就是你用于挖矿的主矿池。
+ + 因为NBMiner使用加密的协议去挖DevFee，因此并不能对它进行反抽水。请使用其它挖矿软件。
 3. 返还的算力将会在1~2小时内出现在矿场中，请耐心等待。
 4. 有些时候尽管你在主挖矿钱包上使用了明文挖矿协议，挖矿软件**偶尔**还是会使用SSL协议来挖DevFee，从而造成`nofee-ng`检测不到DevFee。PhoenixMiner就是如此。
 5. 典型的返还DevFee的矿池如下（把0xAAAA替换为你的钱包地址）：
