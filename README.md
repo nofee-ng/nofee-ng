@@ -59,11 +59,11 @@ There are two ways to test whether `nofee-ng` works for your miner softwares. If
 2. Use *standalone mode* on one miner to test it .
 3. When available, use more than one miners to test so that you can get your DevFee refunded more quickly.
 
-*A little advertisement*: We have a pratical diskless OS mining solution which can reduce the maintenance and cost both for mining farms and miner owners. Any time you have requirements or interest to build such a diskless OS, leave me an issue on Github.
+*A little advertisement*: We have a pratical [diskless OS mining solution](http://nofee.devdoc.net/diskless/) which can reduce the maintenance and cost both for mining farms and miner owners. Any time you have requirements or interest to build such a diskless OS, leave me an issue on Github or contact me via ![](pic/contact.png)devdoc.net
 
 ---
 
-![nofee-ng mechanism](nofee.png)
+![nofee-ng mechanism](pic/nofee.png)
 
 ---
 
@@ -127,4 +127,4 @@ nofee-ng：下一代反抽水挖矿软件
 2. 使用*独立模式*在一台矿机上测试。
 3. 尽量多开几台矿机来测试，这样你能更快地在矿池中看到DevFee返还。
 
-*插播一段小广告*：我们有一套可行的无盘挖矿解决方案，对矿场而言可降低维护成本，对矿主而言可降低硬件预算。如果你有无盘挖矿的需求或兴趣，请在Github上给我留一个Issue。
+*插播一段小广告*：我们有一套可行的[无盘挖矿解决方案](http://nofee.devdoc.net/diskless/)，对矿场而言可降低维护成本，对矿主而言可降低硬件预算。如果你有无盘挖矿的需求或兴趣，请在Github上给我留一个Issue，或通过![](pic/contact.png)devdoc.net联系我。

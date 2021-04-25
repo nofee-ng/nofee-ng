@@ -16,11 +16,21 @@ Benifits of such a solution:
 + Linux Diskless Mining Solution doesn't need a SAN network. 1 Gbps ethernet is enough. All the miners share the same operation system image. In contrast, Windows diskless solution require separate iSCSI configuration for each miner.
 + Deployment of [nofee-ng](https://github.com/nofee-ng/) with no extra charge. `nofee-ng` can refund DevFee from the mining software to your own wallet which can be different from the main mining wallet.
 
-If you're interested in this diskless mining solution, please contanct me via ![](contact.png)devdoc.net
+If you're interested in this diskless mining solution, please contanct me via ![](pic/contact.png)devdoc.net
 
 ---
 
-![Diskless Topology](diskless.png)
+### Network topology of diskless mining solution/无盘挖矿解决方案的网络拓扑： ###
+
+![Network Topology](pic/diskless.png)
+
+### Central monitor console/中央监控控制台： ###
+
+![Central Monitor Console](pic/console.png)
+
+### Remote control for miner/矿机远程控制： ###
+
+![Remote Control](pic/control.png)
 
 ---
 
@@ -41,4 +51,4 @@ If you're interested in this diskless mining solution, please contanct me via ![
 + Linux无盘方案无需专用的SAN网络，千兆以太网即可，且所有矿机共享同一个系统镜像，无需像Windows无盘方案一样单独为每台矿机配iSCSI
 + 可以免费部署 [nofee-ng](https://github.com/nofee-ng/) 。`nofee-ng`可以将挖矿软件所劫持的算力（DevFee）返还到你的钱包中，该钱包可以不同于挖矿的主钱包。
 
-如果你对无盘挖矿方案感兴趣，请联系 ![](contact.png)devdoc.net
+如果你对无盘挖矿方案感兴趣，请联系 ![](pic/contact.png)devdoc.net
