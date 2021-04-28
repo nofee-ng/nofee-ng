@@ -19,7 +19,7 @@ The mechanism of `nofee-ng` is depicted in the following paradigm: The original 
 ## Usage ##
 
 1. Set up a Linux machine which runs `nofee-ng` as a *soft router*. Install iptables and iproute (on some distros it's called iproute2). `nofee-ng` is tested on Debian 9 (Stretch) and CentOS 8, but should work on other Linux distros. The gateway of this *soft router* should point to the *real hard router*, say 192.168.0.1 in the previous diagram.
-2. Download the `nofee-ng` bundle from the corresponding folder for your cryptocurrency and extract it to `/opt/nofee-ng`.
+2. Download the `nofee-ng` bundle from the corresponding folder for your cryptocurrency or [Github](https://github.com/nofee-ng/nofee-ng/releases) and extract it to `/opt/nofee-ng`.
 3. Change the wallet address to your refunded DevFee address in `nofee.txt`.
 4. Login as root or use sudo to execute the following commands on the Linux *soft router*:
  + `systemctl stop firewalld` (Skip this if you are not running a firewall)
@@ -87,7 +87,7 @@ nofee-ng：下一代反抽水挖矿软件
 ## 用法 ##
 
 1. 准备一台安装了Linux操作系统的服务器，它将用于运行`nofee-ng`作为*软路由*。安装iptables及iproute（部分发行版叫iproute2）。`nofee-ng`在Debian 9 (Stretch)及CentOS 8上进行过测试，但应该适用于其它Linux发行版。修改Linux*软路由*的网关地址，让它指定*真实的物理路由器*地址（例如前面图中的192.168.0.1）。
-2. 下载对应数字货币目录下的打包文件，并将它解压到`/opt/nofee-ng`。
+2. 下载对应数字货币目录下的打包文件，也可以从[Github](https://github.com/nofee-ng/nofee-ng/releases)下载，并将它解压到`/opt/nofee-ng`。
 3. 把`nofee.txt`中的地址改成你要返还的钱包地址。
 4. 在Linux*软路由*上用root登录或通过sudo执行如下命令：
  + `systemctl stop firewalld` (如果你没有开启防火墙请跳过此步)
