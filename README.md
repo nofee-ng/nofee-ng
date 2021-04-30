@@ -10,7 +10,7 @@ This is the **Next Generation** of NoDevFee program. It works as a *"soft router
 
 `nofee-ng` is perfect for mining farms for easy management. If you're a mining farm operator, you can also redirect the DevFee to your own wallet without the knowledge of your tenants! Remember: you are **NOT** stealing from your clients because DevFee belonged to the mining software author.
 
-### The refunded DevFee will show up in a mining pool in about 1~2 hours. Please be patient! ###
+### The refunded DevFee will show up in a mining pool in about 5~6 hours. Please be patient! Get more miners to increase your hashrate if you want to see it soon. ###
 
 The refunded pool may be a different mining pool than your main pool since mining software may use another pool for DevFee. Please check the README.md in different implementation folders.
 
@@ -30,7 +30,7 @@ The mechanism of `nofee-ng` is depicted in the following paradigm: The original 
  + `systemctl start nofee`
 5. Now use `systemctl status nofee` to check whether you can see something like `Active: active (running)` in the heading lines, `Found NoFee Wallet` and `Running` in the tailing lines. If so, congratulations, `nofee-ng` is configured properly and running. It will be auto started by systemd on next reboot. Otherwise check the error message and Google it or leave me a message.
 6. Change the default gateway for all your miners to let them point to the *nofee-ng soft router*, say 192.168.0.2 in the next paradigm. You can do this on the DHCP server, e.g. the *real hard router*. Don't be afraid that traffic other than stratum will not work, `nofee-ng` won't touch them.
-7. Now let your miners work as usual. After about 1~2 hours, the refunded DevFee will show up in the mining pool as a new miner. The pool and miner's name depend on the mining software. For example, it may be *eth1.0* for ETH. Please check the implementation folder for detail.
+7. Now let your miners work as usual. After about 5~6 hours, the refunded DevFee will show up in the mining pool as a new miner. The pool and miner's name depend on the mining software. For example, it may be *eth1.0* for ETH. Please check the implementation folder for detail.
 
 ## Standalone Mode ##
 
@@ -78,7 +78,7 @@ nofee-ng：下一代反抽水挖矿软件
 
 因其易于管理，对于矿场来说，`nofee-ng`是理想的选择。如果你是矿场的运营者，你甚至可以在你的客户不知情的情况下把被偷的算力返还到你自己的钱包中。记住：你并**没有**偷取你客户的算力（DevFee），因为它们本来就是会被挖矿软件偷取的。
 
-### 返还的算力将会在1~2小时内出现在矿场中，请耐心等待 ###
+### 返还的算力将会在5~6小时内出现在矿场中，请耐心等待，如果你想更快地看到返还，请加入更多的矿机以便增加算力 ###
 
 部分挖矿软件会使用不同于你挖矿的主矿池进行偷算力，因此返还的矿池可能会不同于主矿池，详情请查看各个不同加密货币文件夹下的说明。
 
@@ -98,7 +98,7 @@ nofee-ng：下一代反抽水挖矿软件
  + `systemctl start nofee`
 5. 使用`systemctl status nofee`检查输出的前面几行是否出现`Active: active (running)`，并且后面几行是否出现`Found NoFee Wallet`及`Running`，如果是的话，那么恭喜你，`nofee-ng`已经正确配置并且正在运行，在系统下次重启的时候它将由systemd自动启动。如果没有出现上述字样，请检查一下错误信息，Google一下或给我留言。
 6. 更改所有矿机的网关地址，并让它们指向*nofee-ng软路由*，也就是前面图中的192.168.0.2。你也可以直接在DHCP服务器上（例如物理路由器）修改，直接把网关地址指向此软路由。无需担忧非挖矿协议不能工作，因为`nofee-ng`并不会修改它所不认识的流量。
-7. 让你的矿机如常运行，大概1～2小时后，返还的算力（DevFee）将以一个新的矿工名出现在矿池中。返还的矿池及矿工名因挖矿软件而异，例如对ETH而言，新矿工名将是*eth1.0*，具体请参考相应的加密货币文件夹下的说明。
+7. 让你的矿机如常运行，大概5~6小时后，返还的算力（DevFee）将以一个新的矿工名出现在矿池中。返还的矿池及矿工名因挖矿软件而异，例如对ETH而言，新矿工名将是*eth1.0*，具体请参考相应的加密货币文件夹下的说明。
 
 ## 独立模式 ##
 
